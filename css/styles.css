@@ -236,9 +236,40 @@ html {
   width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
 }
 .hidden-section {
   visibility: hidden;
+}
+.logo {
+  padding: 24px 1240px 25px 215px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.site-nav,
+.contacts {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.feature-list-title {
+  padding-bottom: 10px;
+}
+.feature-list-text {
+  padding-left: 30px;
+  margin: 0;
+}
+.feature-list {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+.section-work {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+.section-title {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.work {
+  padding-left: 30px;
 }
