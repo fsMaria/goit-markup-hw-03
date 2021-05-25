@@ -66,6 +66,8 @@ h2 {
 
 /* герой */
 .hero {
+  width: 1600px;
+  height: 600px;
   background-color: var(--secondary-background-color);
   text-align: center;
 }
@@ -251,25 +253,33 @@ html {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.hero-section {
+  padding-top: 200px;
+  padding-bottom: 30px;
+}
 .feature-list-title {
   padding-bottom: 10px;
 }
 .feature-list-text {
-  padding-left: 30px;
-  margin: 0;
+  display: inline;
+  padding-right: 30px;
 }
 .feature-list {
   padding-top: 94px;
   padding-bottom: 47px;
 }
 .section-work {
-  padding-top: 47px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .section-title {
   text-align: center;
   padding-bottom: 50px;
 }
-.work {
-  padding-left: 30px;
+.work:not(:last-child) {
+  padding-right: 30px;
+}
+.team-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
