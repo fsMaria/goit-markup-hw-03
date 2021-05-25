@@ -238,7 +238,7 @@ html {
   width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0;
+  margin: auto;
 }
 .hidden-section {
   visibility: hidden;
