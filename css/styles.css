@@ -16,14 +16,20 @@
   font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
   background-color: var(--white-color);
+  margin: 0;
 }
 ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 a {
   text-decoration: none;
 }
-
+h2 {
+  margin: 0;
+  padding: 0;
+}
 /* логотип */
 .logo {
   font-family: raleway;
@@ -61,25 +67,33 @@ a {
 /* герой */
 .hero {
   background-color: var(--secondary-background-color);
+  text-align: center;
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30;
   color: var(--white-color);
   font-size: 44px;
   font-weight: 900;
   line-height: 1.4;
   letter-spacing: 0.06em;
-  text-align: center;
   text-transform: uppercase;
 }
 
 .hero-button {
+  border-radius: 4px;
+  padding: 10px 32px;
+  display: inline-block;
+  min-width: 200px;
+  height: 50px;
   color: var(--white-color);
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
+  text-align: center;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -87,6 +101,8 @@ a {
 }
 /* контент */
 .feature-list-title {
+  margin: 0;
+  padding: 0;
   color: var(--title-text-color);
   font-size: 14px;
   font-weight: 700;
@@ -124,7 +140,13 @@ a {
 }
 /* кнопки */
 .buttons {
-  background-color: var(--white-color);
+  min-width: 130px;
+  min-height: 38px;
+  display: inline-block;
+  padding: 6px 22px;
+  border-radius: 4px;
+  text-align: center;
+  background-color: var(--team-color);
   color: var(--title-text-color);
   font-size: 16px;
   font-weight: 500;
@@ -141,6 +163,12 @@ a {
 }
 
 .prime-button {
+  min-width: 73px;
+  min-height: 38px;
+  display: inline-block;
+  padding: 6px 22px;
+  border-radius: 4px;
+  text-align: center;
   background-color: var(--accent-color);
   color: var(--white-color);
   font-size: 16px;
@@ -193,4 +221,24 @@ a {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
+}
+
+/* стилизация геометрии сайта */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hidden-section {
+  visibility: hidden;
 }
