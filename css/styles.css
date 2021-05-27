@@ -5,6 +5,9 @@
   --white-color: rgba(255, 255, 255, 1);
   --secondary-background-color: rgba(47, 48, 58, 1);
   --team-color: rgba(245, 244, 250, 1);
+  --line-color: rgba(236, 236, 236, 1);
+  --hover-color: rgba(24, 140, 232, 1);
+  --border-color: rgba(238, 238, 238, 1);
 }
 /* цвет основного текста rgba(117, 117, 117, 1) */
 /* вторичный цвет текста #212121 */
@@ -29,6 +32,10 @@ a {
 h2 {
   margin: 0;
   padding: 0;
+}
+p {
+  display: inline-block;
+  margin: 0;
 }
 /* логотип */
 .logo {
@@ -100,6 +107,7 @@ h2 {
 .hero-button:hover,
 .hero-button:focus {
   cursor: pointer;
+  background-color: var(--hover-color);
 }
 /* контент */
 .feature-list-title {
@@ -223,6 +231,7 @@ h2 {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 
 /* стилизация геометрии сайта */
@@ -238,38 +247,38 @@ html {
   width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: auto;
+  margin: 0;
 }
 .hidden-section {
   visibility: hidden;
 }
 .logo {
   padding: 24px 1240px 25px 215px;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 .site-nav,
 .contacts {
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 31px;
+}
+hr {
+  width: 1600px;
+  height: 1px;
+  border: none;
+  background-color: var(--line-color);
+  margin: 0;
 }
 .hero-section {
   padding-top: 200px;
-  padding-bottom: 30px;
+  padding-bottom: 200px;
 }
 .feature-list-title {
   padding-bottom: 10px;
 }
-.feature-list-text {
-  display: inline;
+.feature:not(:last-child) {
   padding-right: 30px;
 }
-.feature-list {
-  padding-top: 94px;
-  padding-bottom: 47px;
-}
+
 .section-work {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 .section-title {
@@ -279,7 +288,62 @@ html {
 .work:not(:last-child) {
   padding-right: 30px;
 }
-.team-section {
+/* TEAM cards */
+.team-section-item > img {
+  background-color: var(--white-color);
+  width: 270px;
+}
+
+.team-box > li {
+  background: var(--white-color);
+  width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-section-item {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.profession {
+  margin-bottom: 30px;
+}
+/* TEAM cards */
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.buttons-menu {
+  padding-bottom: 16px;
+}
+.buttons-menu li:not(:last-child) {
+  padding-right: 8px;
+}
+/* DEVELOPER CARDS */
+.type-container {
+  background-color: var(--white-color);
+  width: 370px;
+  border: 1px solid;
+  color: var(--border-color);
+  border-width: 0 1px 1px 1px;
+  padding-left: 24px;
+}
+.type-box-item {
+  margin-top: 31px;
+  margin-bottom: 25px;
+}
+.type-box-item > li {
+  background-color: var(--white-color);
+  width: 370px;
+}
+.type-develop {
+  margin-bottom: 29px;
+}
+.type .type-develop {
+}
+/* DEVELOPER CARDS */
