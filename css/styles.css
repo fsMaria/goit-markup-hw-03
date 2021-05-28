@@ -343,6 +343,7 @@ html {
   padding-bottom: 60px;
 }
 .buttons-menu {
+  display: inline-flex;
   padding-top: 94px;
   padding-bottom: 34px;
 }
@@ -350,6 +351,12 @@ html {
   padding-right: 8px;
 }
 /* DEVELOPER CARDS */
+.develop-section {
+  padding-bottom: 94px;
+}
+.flex-container {
+  
+}
 .type-container {
   background-color: var(--white-color);
   width: 370px;
@@ -358,6 +365,11 @@ html {
   border-width: 0 1px 1px 1px;
   padding-left: 24px;
   padding-top: 20px;
+}
+.type-box {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
 }
 .type-box-item img {
   display: block;
@@ -368,6 +380,7 @@ html {
   background-color: var(--white-color);
   width: 370px;
   margin-bottom: 30px;
+  margin-right: 30px;
 }
 .type {
   margin-top: 0;
