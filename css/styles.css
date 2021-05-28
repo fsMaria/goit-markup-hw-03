@@ -427,7 +427,8 @@ html {
 .footer .logo {
   margin-bottom: 20px;
 }
-.street p {
+.location  {
+  margin-top: 20px;
   margin-bottom: 9px;
 }
 .footer-link:not(:last-child) {
