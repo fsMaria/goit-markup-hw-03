@@ -229,7 +229,7 @@ p {
   font-size: 14px;
   color: var(--white-color);
   line-height: 1.7;
-  margin-bottom: 9px;
+  margin-top: 20px;
 }
 
 /* РАЗРАБОТКА */
@@ -309,10 +309,10 @@ html {
   align-items: center;
 }
 .feature-list-title {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .feature:not(:last-child) {
-  padding-right: var(--card-set-gap);
+  margin-right: var(--card-set-gap);
 }
 /* НАШИ РАБОТЫ */
 .section-work {
@@ -323,18 +323,19 @@ html {
 
 .section-title {
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .our-work {
   display: flex;
 }
 .work:not(:last-child) {
-  padding-right: var(--card-set-gap);
+  margin-right: var(--card-set-gap);
 }
 /* КАРТОЧКИ */
 .team-section-item > img {
-  background-color: var(--white-color);
-  width: 270px;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .team-box {
   display: flex;
@@ -366,18 +367,13 @@ html {
 .buttons-menu {
   display: flex;
   justify-content: center;
-}
-.buttons-section {
-  padding-top: 94px;
-  padding-bottom: 34px;
+  margin-bottom: 34px;
 }
 .buttons-menu li:not(:last-child) {
   padding-right: 8px;
 }
 /* КАРТОЧКИ РАЗРАБОТОК */
-.develop-section {
-  padding-bottom: 94px;
-}
+
 .type-container {
   background-color: var(--white-color);
   width: 370px;
@@ -393,7 +389,7 @@ html {
 }
 .type-box-item img {
   display: block;
-  width: 370px;
+  max-width: 100%;
   height: auto;
 }
 
@@ -402,7 +398,7 @@ html {
   max-width: 100%;
   margin-bottom: 30px;
 }
-.type-box:nth-child(3n) {
+.type-box-item:nth-child(3n) {
   margin-right: -30px;
 }
 .type-box > .type-box-item{
@@ -428,12 +424,11 @@ html {
   margin-bottom: 20px;
 }
 .location  {
-  margin-top: 20px;
   margin-bottom: 9px;
 }
 .footer-link:not(:last-child) {
   margin-bottom: 9px;
-}
+} 
 .street > .location {
   margin-bottom: 9px;
 }
