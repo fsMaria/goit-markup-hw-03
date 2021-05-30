@@ -398,10 +398,10 @@ html {
   max-width: 100%;
   margin-bottom: 30px;
 }
-.type-box-item:nth-child(3n) {
+.type-box:nth-child(2n + 1) {
   margin-right: -30px;
 }
-.type-box > .type-box-item{
+.type-box > .type-box-item {
   flex-basis: calc(100% / 3);
 }
 .type-box-item:nth-last-child(-n + 3) {
@@ -423,12 +423,12 @@ html {
 .footer .logo {
   margin-bottom: 20px;
 }
-.location  {
+.location {
   margin-bottom: 9px;
 }
 .footer-link:not(:last-child) {
   margin-bottom: 9px;
-} 
+}
 .street > .location {
   margin-bottom: 9px;
 }
