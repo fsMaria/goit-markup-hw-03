@@ -401,7 +401,7 @@ html {
   max-width: 100%;
 }
 .type-box-item {
-  flex-basis: calc((100% - 90px) / 3);
+  flex-basis: calc((100% - 60px) / 3);
 }
 .type-box-item:not(:nth-child(3n)) {
   margin-right: 30px;
